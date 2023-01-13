@@ -1,0 +1,346 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    align-items: center!;
+  }
+  
+  .outer-div {
+    height: 250px;
+    width: 500px;
+    border-radius: 1em;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 5px #797979);
+    text-align: center;
+    
+    
+  }
+  
+  
+  .event-image {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+
+  }
+  
+  .event-info {
+    background-color: white;
+    height: 7em;
+    width: 40em;
+    color: black;
+  }
+  
+  .event-title {
+    font-size: 1.9em;
+    font-weight: 700;
+    line-height: 1.3;
+    padding: 0.5em;
+    margin: auto;
+     
+  }
+  
+  .event-location{
+    font-size: 1.1em;
+    line-height: 0.5;
+    display: block;
+    padding: 0.6em;
+  }
+  
+  .event-street {
+    padding: 0.8em;
+    font-size: 0.9em;
+    color: #7E7E7E;
+  }
+  
+  .event-price{
+    color: #2BC23A;
+    float: right;
+    margin: 0.5em;
+  }
+  
+  .event-date{
+    font-size: 1.1em;
+    line-height: 0.5;
+    display: block;
+    padding: 0.6em;
+  }
+  
+  .gradient-overlay {
+    height: 13em;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(#9198e500, #ffffff);
+    margin-top: -13em;
+    margin: auto;
+    text-align: center;
+  }
+  
+  @-moz-document url-prefix() {
+    .gradient-overlay {
+      margin: 1em 0 0 -40em;
+    }
+  }
+  
+  .event-info-table {
+    margin: -0.3em 1em 0 1em;
+    width: 38em;
+  }
+  
+  .event-ticket-button {
+    float: right;
+    margin: -2em 0.5em 0 0;
+    padding: 0.2em 2em;
+    background-color: #0466ee;
+    color: white;
+    border-radius: 5em;
+    cursor: pointer;
+    font-size: large;
+  }
+  
+  .icon-table-data{
+    width: 1em;
+  }
+  html, body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  
+  .vertical-row{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .vertical-row .fill-parent{
+    flex: 1;
+  }
+  
+  .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #3c70a4;
+  }
+  /*
+  .container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://image.flaticon.com/icons/svg/1290/1290220.svg);
+    opacity: 0.2;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  */
+  .ticket{
+    position: relative;
+    background-color: white;
+    height: 7em;
+    width: 20em;
+    border-radius: 0.5em;
+    transform: rotate(-10deg);
+  }
+  
+  .brand-icon{
+    position: absolute;
+    left: -1.25em;
+    top: 2em;
+  }
+  
+  .brand-icon img{
+    position: absolute;
+    height: 3em;
+  }
+  
+  .brand-icon::before{
+    content: '';
+      position: absolute;
+      left: -0.9em;
+      top: -1em;
+      background-color: white;
+      height: 5em;
+      width: 5em;
+      border-radius: 50%;
+      box-shadow: 3px 2px 0px #ddd;
+  }
+  
+  .separator{
+    position: absolute;
+    top: -0.5em;
+    right: 5.5em;
+    height: calc(100% + 1em);
+    width: 1.5em;
+  }
+  
+  .separator::before{
+    content: '';
+    position: absolute;
+        top: 1em;
+      left: 0.5em;
+      height: calc(100% - 2em);
+      border-left: 1px dashed;
+      border-color: #33333385;
+  }
+  
+  .round-cut-out{
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: #3c70a4;
+  }
+  
+  .adjust-right-cut-out{
+    float: right;
+    margin-top: 3em;
+    margin-right: -0.5em;
+  }
+  
+  .brand-name{
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 1.75rem;
+    position: relative;
+    top: 1.4em;
+    left: 2.5em;
+    color: #DE0418;
+  }
+  
+  .heading{
+    position: absolute;
+    left: 3em;
+    top: 1em;
+  }
+  
+  .subheading{
+    position: absolute;
+      left: 8em;
+      bottom: 1em;
+      color: #333;
+      font-size: 0.4rem;
+      text-transform: capitalize;
+  }
+  
+  .booking-date{
+    position: absolute;
+      top: 1em;
+      right: 7.75em;
+      font-size: 0.9rem;
+      text-align: center;
+  }
+  
+  .booking-date .month{
+    font-size: 0.6rem;
+  }
+  
+  .barcode-container{
+    position: absolute;
+    right: 2.5em;
+    transform: rotate(-90deg);
+  }
+  
+  .barcode-container img{
+    width: 4em;
+  }
+  
+  .ticket-count{
+    position: absolute;
+    top: 5.5em;
+    right: 1.5em;
+    font-size: 0.6rem;
+    transform: rotate(-90deg);
+    font-weight: bold;
+  }body{
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .outer-div {
+    height: 20em;
+    width: 40em;
+    border-radius: 1em;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 5px #797979);
+  }
+  
+  .event-image {
+    object-fit: cover;
+    height: 14em;
+    width: 40em;
+  }
+  
+  .event-info {
+    background-color: white;
+    height: 7em;
+    width: 40em;
+    color: black;
+  }
+  
+  .event-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 0.5;
+    padding: 0.5em;
+    position: absolute;
+    margin: -2em 0 0 0.4em;
+  }
+  
+  .event-location{
+    font-size: 1.1em;
+    line-height: 0.5;
+    display: block;
+    padding: 0.6em;
+  }
+  
+  .event-street {
+    padding: 0.8em;
+    font-size: 0.9em;
+    color: #7E7E7E;
+  }
+  
+  .event-price{
+    color: #2BC23A;
+    float: right;
+    margin: 0.5em;
+  }
+  
+  .event-date{
+    font-size: 1.1em;
+    line-height: 0.5;
+    display: block;
+    padding: 0.6em;
+  }
+  
+  .gradient-overlay {
+    height: 13em;
+    width: 40em;
+    position: absolute;
+    background: linear-gradient(#9198e500, #ffffff);
+    margin-top: -13em;
+  }
+  
+  @-moz-document url-prefix() {
+    .gradient-overlay {
+      margin: 1em 0 0 -40em;
+    }
+  }
+  
+  .event-info-table {
+    margin: -0.3em 1em 0 1em;
+    width: 38em;
+  }
+  
+  .event-ticket-button {
+    float: right;
+    margin: -2em 0.5em 0 0;
+    padding: 0.2em 2em;
+    background-color: #0466ee;
+    color: white;
+    border-radius: 5em;
+    cursor: pointer;
+  }
+  
+  .icon-table-data{
+    width: 1em;
+  }
+  
